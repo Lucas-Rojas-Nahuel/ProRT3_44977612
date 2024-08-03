@@ -1,0 +1,167 @@
+/*estilos del header*/
+body{
+    /* agrege una imagen de fondo */
+    background-image: url('/ProT2_44977612/assets/img/fondo-body.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    overflow-x: hidden;
+}
+
+
+/* agrege un fondo negro con trasparencia para el navbar */
+.nav-fondo{
+    background-color:hsla(0, 0%, 0%, 0.5);
+}
+
+/* hace que la barra del buscador ocupe el ancho sobrante del navbar */
+.buscador{
+    flex-grow: 1;
+}
+
+/* agrege una transición a los botones del navbar */
+.btn-hover{
+    transition: all 1s;
+}
+
+.btn-hover:hover{
+    background-color: #FFC107!important;
+    transform: scale(1);
+}
+
+.color-icons{
+    color: red!important;
+    background-color: #FFC107!important;
+}
+
+/*estilos del section principal*/
+
+/* utilice el section llamado principal para que ocupe el halto de la pantalla restando lo del navbar */
+
+
+/* modifica carta de presentacion a mi gusto de la pagina principal*/
+
+.container-info-card{
+    width: 50%!important;
+    height: 100%!important;
+}
+
+.container-card{
+    height: 500px;
+    width: 100vw;
+}
+
+.container-img{
+    width: 50%!important;
+    height: 80%!important;
+}
+
+.min-ancho{
+    width: 80%;
+    height: 80%!important;
+    background-color:hsla(0, 0%, 0%, 0.8)!important;
+}
+
+.img-1{
+    height:100%;
+}
+
+.titulo-card{
+     font-size: 40px;
+     text-align: center;
+}
+
+.parrafo-card{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* y agrego fondo negro con tranparencia */
+.fondo-img{
+    background-color:hsla(0, 0%, 0%, 0.8)!important;
+}
+
+
+/* modificacion cuando se achica la pantalla */ 
+@media(max-width: 573px) {
+
+    /* hago desaparecer la imagen de la pagina principal */
+    .img-section1{
+        width: 0!important;
+        height: 0!important;
+        display: none!important;
+    }
+
+    .container-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-info-card{
+        width: 100%!important;
+        padding: 10px!important;
+    }
+    /* hago que el div que acompañaba la imagen que desapareci ocupe el 100% de la pantalla */
+    .min-ancho{
+        width: 100%!important;
+    }
+
+    /* modifico un poco el contenedor de iniciar session y registrarme */
+    .ancho-form{
+        height: 90%!important;
+        width: 90%!important;
+    }
+
+    /* section de registrarme */
+    .ancho-form{
+        
+        padding: 10!important;
+    }
+
+}
+
+/*estilos del section-quienes-somos*/
+
+/* fondo de la card de presentacion de personas */
+.fondo-quienes-somos{
+    background-color:hsla(33, 90%, 57%, 0.4)!important; 
+}
+
+
+/*estilos del section-registrarme*/
+
+/* modifico un poco el contenedor de iniciar session y registrarme */
+.ancho-form{
+     padding: 20px!important;
+    width: 600px;
+}
+
+/*estilos del section-iniciar-sesion*/
+.ancho{
+    margin: 50px ,0 !important;
+    
+}
+
+/* estilos de inicio de sesión */
+
+.medida-login{
+    height: 540px!important;
+}
+
+/*estilos del footer*/
+
+/* colo de fondo negro */
+ .fondo-foo{
+    background-color:hsla(0, 0%, 0%, 0.8);
+ }
+
+/* modificaciones de carta de bienvenida del registro */
+.section-usuario{
+    height: 450px!important;
+}
+
+
+/* modificacion de la tabla de usuarios */
+
+.table-scroll{
+    overflow: scroll;
+}
